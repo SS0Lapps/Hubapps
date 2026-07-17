@@ -1,0 +1,336 @@
+/* ============================================
+   RESPONSIVE DESIGN - Mobile & Tablet
+   ============================================ */
+
+/* Tablet Devices (768px - 1024px) */
+@media (max-width: 1024px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        min-height: auto;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .nav-menu {
+        gap: 1.5rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-links {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .dev-mode-panel {
+        width: 90%;
+        left: 5%;
+        bottom: 10px;
+    }
+}
+
+/* Mobile Devices (320px - 767px) */
+@media (max-width: 767px) {
+    /* Header */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background: var(--light-color);
+        padding: 1rem;
+        gap: 0;
+        box-shadow: var(--shadow);
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 0.8rem 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* Hero Section */
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* About Section */
+    .about {
+        padding: 2rem 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    /* Projects Section */
+    .projects {
+        padding: 2rem 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        border-radius: 10px;
+    }
+
+    .project-image {
+        height: 150px;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 2rem 1rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-links {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .contact-link {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    /* Developer Mode Panel */
+    .dev-mode-panel {
+        width: 95%;
+        left: 2.5%;
+        max-height: 80vh;
+        bottom: 10px;
+    }
+
+    .dev-mode-header h2 {
+        font-size: 1rem;
+    }
+
+    .tab-btn {
+        font-size: 0.8rem;
+        padding: 0.8rem 0.5rem;
+    }
+
+    .tab-content {
+        padding: 1rem;
+    }
+
+    .visitor-info p {
+        font-size: 0.85rem;
+    }
+
+    .visitors-log {
+        font-size: 0.75rem;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .footer-content p {
+        font-size: 0.8rem;
+    }
+
+    /* Navigation Container */
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-name {
+        font-size: 1.3rem;
+    }
+}
+
+/* Small Mobile Devices (320px - 480px) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature-card p {
+        font-size: 0.85rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-card p {
+        font-size: 0.85rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .dev-mode-panel {
+        width: 98%;
+        left: 1%;
+    }
+
+    .logo-section gap {
+        gap: 0.5rem;
+    }
+
+    .brand-name {
+        font-size: 1.1rem;
+    }
+}
+
+/* Extra Large Screens (1440px+) */
+@media (min-width: 1440px) {
+    .container,
+    .nav-container {
+        max-width: 1400px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .dev-mode-panel {
+        max-height: 90vh;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .dev-mode-panel,
+    .hamburger {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .btn {
+        border: 1px solid black;
+    }
+}

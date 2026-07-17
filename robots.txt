@@ -1,0 +1,23 @@
+# Robots.txt for Esahub
+# Allows search engines to crawl the website
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow sensitive files
+Disallow: /admin/
+Disallow: /*.json
+Disallow: /*.backup
+
+# Sitemap
+Sitemap: https://esahub.dev/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Request rate
+Request-rate: 1/1s
