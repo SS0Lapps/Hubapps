@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESA HUB - Portfolio Professional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/secret.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img id="logoImg" src="https://i.pinimg.com/736x/5c/5b/8q/5c5b8qTC8_Kv5eFqK-1234567890.jpg" alt="ESA Logo" class="logo-image">
+                <div class="logo-text">
+                    <h1>ESA.DEV</h1>
+                    <p class="tagline">Professional Portfolio Hub</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">الرئيسية</a>
+                <a href="#projects" class="nav-link">المشاريع</a>
+                <a href="#contact" class="nav-link">التواصل</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">مرحباً في ESA HUB</h1>
+            <p class="hero-subtitle">مشاريع احترافية وعملية مع وظائف حقيقية</p>
+            <div class="hero-buttons">
+                <a href="https://tiktok.com/@esa.dev" target="_blank" class="btn btn-primary">
+                    <span>🎬 تابعني على TikTok</span>
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <span>استكشف المشاريع</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.pinimg.com/736x/5Z/y9/JE/5Zy9JEsQR_design-image-1234567890.jpg" alt="Hero Design" class="design-image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>عن هذا الـ Hub</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>مشاريع قوية</h3>
+                    <p>مشاريع احترافية مع وظائف حقيقية فعلية</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">💻</div>
+                    <h3>تقنيات حديثة</h3>
+                    <p>استخدام أحدث التقنيات والأدوات</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>تصميم احترافي</h3>
+                    <p>واجهات مستخدم جميلة وعملية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>المشاريع والاختصارات</h2>
+            <div class="projects-grid" id="projectsContainer">
+                <div class="empty-state">
+                    <div class="empty-icon">📁</div>
+                    <h3>لا توجد مشاريع حالياً</h3>
+                    <p>سيتم إضافة المشاريع قريباً</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>تابعني</h2>
+            <div class="contact-links">
+                <a href="https://tiktok.com/@esa.dev" target="_blank" class="contact-link">
+                    <span class="link-icon">🎬</span>
+                    <span>TikTok</span>
+                </a>
+                <a href="mailto:contact@esa.dev" class="contact-link">
+                    <span class="link-icon">📧</span>
+                    <span>البريد الإلكتروني</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secret Code Panel (Hidden) -->
+    <div id="secretPanel" class="secret-panel hidden">
+        <div class="secret-content">
+            <div class="secret-header">
+                <h2>Developer Mode - Secret Panel</h2>
+                <button class="close-btn" onclick="closeSecretPanel()">✕</button>
+            </div>
+            <div class="secret-body">
+                <div class="info-section">
+                    <h3>معلومات الزائر</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label>عنوان IP:</label>
+                            <span id="ipAddress">جاري التحميل...</span>
+                        </div>
+                        <div class="info-item">
+                            <label>الدول:</label>
+                            <span id="country">جاري التحميل...</span>
+                        </div>
+                        <div class="info-item">
+                            <label>المدينة:</label>
+                            <span id="city">جاري التحميل...</span>
+                        </div>
+                        <div class="info-item">
+                            <label>ISP:</label>
+                            <span id="isp">جاري التحميل...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="visitors-section">
+                    <h3>سجل الزوار</h3>
+                    <div id="visitorsList" class="visitors-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 ESA.DEV - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/secret.js"></script>
+    <script src="js/ip-tracker.js"></script>
+</body>
+</html>
